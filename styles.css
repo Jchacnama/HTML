@@ -1,0 +1,41 @@
+h1{
+    text-align: center;
+    font-size: 80px;
+    border: #022218;
+    background-color: white;
+
+    }
+body {
+    background-color: #60993E;
+
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 30;
+}
+#hero_image{
+    display: block;
+    margin: 40px auto;
+    border-radius: 20px;
+}
+
+hr{
+    margin: 0px 20px;
+    border-top: none;
+    border-bottom: 3px #022218 solid;
+}
+
+.contenedor{
+    position: relative;
+    font-size: 120;
+}
+.superpuesto{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
