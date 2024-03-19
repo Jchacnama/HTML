@@ -1,41 +1,66 @@
-h1{
-    text-align: center;
-    font-size: 80px;
-    border: #022218;
-    background-color: white;
-
-    }
-body {
-    background-color: #60993E;
-
+body{
+    font-family: sans-serif;
+    background-color: rgb(4, 105, 4);
+    margin: 0;
 }
-
-ul{
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
     display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    padding: 30;
-}
-#hero_image{
-    display: block;
-    margin: 40px auto;
-    border-radius: 20px;
-}
-
-hr{
-    margin: 0px 20px;
-    border-top: none;
-    border-bottom: 3px #022218 solid;
-}
-
-.contenedor{
-    position: relative;
-    font-size: 120;
-}
-.superpuesto{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
+    min-height: 70px;
+    background-color: rgb(4, 105, 4);
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    }
+.logo{
+    display: flex;
+    align-items: center;
 }
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+nav a:hover{
+    color: black;
+}
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px;
+    }
+}
+
+.wrap {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right,rgb(0 0 0 /.3),rgb(0 0 0 /.3)), url(https://fotografias.larazon.es/clipping/cmsimages01/2020/03/19/68D99156-B948-4378-A242-4959E892A05D/69.jpg?crop=1298,730,x81,y0&width=1280&height=720&optimize=low&format=jpg);
+background-size: cover;
+background-position: center;
+}
+
+.wrap-texto{
+    color: white;
+    text-align: center;
+    width: 50%;
+    font-size: 35px;
+    padding: 0 250px;
+   }
